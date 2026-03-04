@@ -1,0 +1,16 @@
+{
+  "name": "plain-theme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bunx serve .",
+    "format": "biome format --write .",
+    "biome:ci": "biome ci .",
+    "lint": "biome lint ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.9.3"
+  }
+}

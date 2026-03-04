@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blug Plain Template Format Coverage Article</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-[18px] leading-[1.75] text-gray-900">
+    <nav class="mx-auto max-w-[720px] px-6 pt-8">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-gray-200 pb-4">
+        <a href="index.html" class="flex items-center gap-2 no-underline font-semibold">
+          <span class="inline-block h-5 w-5 rounded-sm bg-gray-900"></span>
+          <span>Blug</span>
+        </a>
+        <a href="articles.html" class="underline decoration-black decoration-wavy underline-offset-2">All Articles</a>
+        <a href="categories.html" class="underline decoration-black decoration-wavy underline-offset-2">Categories</a>
+        <a href="tags.html" class="underline decoration-black decoration-wavy underline-offset-2">Tags</a>
+        <a href="about.html" class="underline decoration-black decoration-wavy underline-offset-2">About</a>
+      </div>
+    </nav>
+
+    <header class="mx-auto max-w-[720px] px-6 pt-12">
+      <h1 class="text-4xl font-semibold mt-12 mb-6">
+        Blug Plain Template Format Coverage Article
+      </h1>
+      <p class="text-sm text-gray-500 mb-8">Blug Team · Mar 2, 2026 · 12 min read</p>
+    </header>
+
+    <main class="mx-auto max-w-[720px] px-6 pb-24">
+      <article>
+        <p class="mb-6">
+          Welcome to this comprehensive formatting test article. This post exists to ensure your
+          template correctly renders all major Markdown and technical blog formatting features.
+        </p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">1. Paragraphs and Inline Formatting</h2>
+
+        <p class="mb-6">This is a normal paragraph with regular text.</p>
+
+        <p class="mb-6">
+          This paragraph contains <strong>bold text</strong>, <em>italic text</em>,
+          <strong><em>bold and italic text</em></strong>, and <del>strikethrough</del> formatting.
+        </p>
+
+        <p class="mb-6">
+          Here is inline code inside a sentence:
+          <code class="font-mono text-[16px]">const user = await fetchUser()</code>.
+        </p>
+
+        <p class="mb-6">
+          You can also mix <strong>bold with <code class="font-mono text-[16px]">inline code</code> inside</strong>
+          a sentence.
+        </p>
+
+        <p class="mb-6">
+          Chemical formula example: H<sub>2</sub>O<br />
+          Mathematics example: x<sup>2</sup>
+        </p>
+
+        <p class="mb-6">
+          A long paragraph to test wrapping behavior and line length. This paragraph is
+          intentionally verbose and stretches across multiple lines so that we can verify
+          readability, spacing, and typographic rhythm inside the layout container without visual
+          clutter interfering with content presentation.
+        </p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">2. Links</h2>
+
+        <p class="mb-6">
+          Here is an inline link to
+          <a href="https://blug.io" class="underline decoration-black decoration-wavy underline-offset-2">Blug</a>.
+        </p>
+
+        <p class="mb-6">
+          Here is a long link that should wrap correctly in narrow containers:
+          <a
+            href="https://example.com/some/really/long/path/that/should/test/wrapping/behavior/in/your/template"
+            class="underline decoration-black decoration-wavy underline-offset-2 break-all"
+            >https://example.com/some/really/long/path/that/should/test/wrapping/behavior/in/your/template</a
+          >
+        </p>
+
+        <p class="mb-6">
+          Here is an internal anchor link:
+          <a href="#section-8-tables" class="underline decoration-black decoration-wavy underline-offset-2"
+            >Jump to Tables</a
+          >
+        </p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">3. Headings</h2>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">H3 Heading Example</h3>
+        <h4 class="text-lg font-medium mt-8 mb-3">H4 Heading Example</h4>
+        <h5 class="text-base font-medium mt-8 mb-3">H5 Heading Example</h5>
+        <h6 class="text-sm font-medium mt-8 mb-3">H6 Heading Example</h6>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">4. Unordered Lists</h2>
+
+        <ul class="list-disc pl-6 mb-6">
+          <li>First level item</li>
+          <li>Second item</li>
+          <li>
+            Third item
+            <ul class="list-disc pl-6 mt-2">
+              <li>
+                Nested item level 2
+                <ul class="list-disc pl-6 mt-2">
+                  <li>Nested level 3</li>
+                  <li>Another level 3 item</li>
+                </ul>
+              </li>
+              <li>Another nested item</li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">5. Ordered Lists</h2>
+
+        <ol class="list-decimal pl-6 mb-6">
+          <li>First ordered item</li>
+          <li>Second ordered item</li>
+          <li>
+            Third ordered item
+            <ol class="list-decimal pl-6 mt-2">
+              <li>Nested ordered item</li>
+              <li>Another nested ordered item</li>
+            </ol>
+          </li>
+        </ol>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">6. Mixed Lists</h2>
+
+        <ol class="list-decimal pl-6 mb-6">
+          <li>
+            Ordered item
+            <ul class="list-disc pl-6 mt-2">
+              <li>Nested unordered item</li>
+              <li>Another unordered item</li>
+            </ul>
+          </li>
+          <li>Another ordered item</li>
+        </ol>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">7. Task Lists</h2>
+
+        <ul class="list-none pl-0 mb-6">
+          <li class="mb-2"><input type="checkbox" disabled /> Write documentation</li>
+          <li class="mb-2"><input type="checkbox" checked disabled /> Implement API</li>
+          <li class="mb-2"><input type="checkbox" disabled /> Add tests</li>
+          <li class="mb-2"><input type="checkbox" checked disabled /> Ship feature</li>
+        </ul>
+
+        <hr class="my-10" />
+
+        <h2 id="section-8-tables" class="text-2xl font-semibold mt-10 mb-4">8. Tables</h2>
+
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-left text-[16px] leading-[1.6]">
+            <thead>
+              <tr>
+                <th class="pr-6 pb-2 font-semibold">Feature</th>
+                <th class="pr-6 pb-2 font-semibold">Supported</th>
+                <th class="pb-2 font-semibold">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pr-6 py-1">Headings</td>
+                <td class="pr-6 py-1">Yes</td>
+                <td class="py-1">All levels</td>
+              </tr>
+              <tr>
+                <td class="pr-6 py-1">Code Blocks</td>
+                <td class="pr-6 py-1">Yes</td>
+                <td class="py-1">Multiple languages supported</td>
+              </tr>
+              <tr>
+                <td class="pr-6 py-1">Tables</td>
+                <td class="pr-6 py-1">Yes</td>
+                <td class="py-1">Responsive rendering required</td>
+              </tr>
+              <tr>
+                <td class="pr-6 py-1">Images</td>
+                <td class="pr-6 py-1">Yes</td>
+                <td class="py-1">Should scale correctly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="mb-6">Table with code inside cell:</p>
+
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-left text-[16px] leading-[1.6]">
+            <thead>
+              <tr>
+                <th class="pr-6 pb-2 font-semibold">Language</th>
+                <th class="pb-2 font-semibold">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pr-6 py-1">JavaScript</td>
+                <td class="py-1"><code class="font-mono">console.log("Hello")</code></td>
+              </tr>
+              <tr>
+                <td class="pr-6 py-1">Python</td>
+                <td class="py-1"><code class="font-mono">print("Hello")</code></td>
+              </tr>
+              <tr>
+                <td class="pr-6 py-1">Bash</td>
+                <td class="py-1"><code class="font-mono">echo "Hello"</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">9. Blockquotes</h2>
+
+        <blockquote class="pl-4 mb-6">
+          <p>This is a simple blockquote.</p>
+        </blockquote>
+
+        <blockquote class="pl-4 mb-6">
+          <p>This is a multi-line blockquote.<br />It spans multiple lines<br />and should maintain spacing.</p>
+        </blockquote>
+
+        <blockquote class="pl-4 mb-6">
+          <p>Outer quote</p>
+          <blockquote class="pl-4 mt-4">
+            <p>Inner quote<br />Nested inside the first quote.</p>
+          </blockquote>
+        </blockquote>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">10. Horizontal Rule</h2>
+
+        <hr class="my-10" />
+        <p class="mb-6">Content above and below should have clear spacing.</p>
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">11. Code Blocks</h2>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">JavaScript</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new Error("Network error");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(error);
+  }
+}</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">TypeScript</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+function greet(user: User): string {
+  return `Hello, ${user.name}`;
+}</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">Python</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>def greet(name: str) -> str:
+    return f"Hello, {name}"</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">Rust</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>fn greet(name: &amp;str) -&gt; String {
+    format!("Hello, {}", name)
+}</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">Bash</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>#!/bin/bash
+echo "Hello, world"</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">JSON</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>{
+  "id": "123",
+  "name": "Blug",
+  "published": true
+}</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">YAML</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>id: 123
+name: Blug
+published: true</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">SQL</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>SELECT id, title
+FROM posts
+WHERE published = true
+ORDER BY created_at DESC;</code></pre>
+
+        <h3 class="text-xl font-medium mt-8 mb-3">Code Block Without Language</h3>
+        <pre class="font-mono text-[16px] overflow-x-auto mb-6"><code>This is a plain code block.
+It has no syntax highlighting.</code></pre>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">12. Images</h2>
+
+        <p class="mb-6">Standard image:</p>
+        <p class="mb-6">
+          <img src="https://via.placeholder.com/800x400" alt="Sample Image" class="w-full h-auto" />
+        </p>
+
+        <p class="mb-6">Image with caption (if supported by template):</p>
+        <figure class="mb-6">
+          <img
+            src="https://via.placeholder.com/600x300"
+            alt="Architecture Diagram"
+            class="w-full h-auto"
+          />
+          <figcaption class="text-sm text-gray-500 mt-2">Figure 1: System architecture overview.</figcaption>
+        </figure>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">13. Definition List (If Supported)</h2>
+
+        <dl class="mb-6">
+          <dt class="font-semibold">Term One</dt>
+          <dd class="mb-4">Definition of term one.</dd>
+          <dt class="font-semibold">Term Two</dt>
+          <dd>Definition of term two.</dd>
+        </dl>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">14. Keyboard Input</h2>
+
+        <p class="mb-6">Press <code class="font-mono text-[16px]">Ctrl + C</code> to copy.</p>
+
+        <p class="mb-6">
+          Or using HTML kbd tag:<br />
+          <kbd class="font-mono text-[16px]">Ctrl</kbd> + <kbd class="font-mono text-[16px]">V</kbd>
+        </p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">15. Collapsible Section</h2>
+
+        <details class="mb-6">
+          <summary class="cursor-pointer">Click to expand</summary>
+          <p class="mt-4">This content is hidden by default and expands when clicked.</p>
+        </details>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">16. Emoji</h2>
+
+        <p class="mb-6">🚀 Rocket<br />⚙ Settings<br />🔥 Performance</p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">17. Line Break Test</h2>
+
+        <p class="mb-6">
+          This line ends here.<br />
+          This line should appear directly below due to a manual line break.
+        </p>
+
+        <p class="mb-6">This is a new paragraph.</p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">18. Footnote Example</h2>
+
+        <p class="mb-6">
+          Here is a statement with a footnote reference.<sup
+            ><a href="#footnote-1" class="underline decoration-black decoration-wavy underline-offset-2">[1]</a></sup
+          >
+        </p>
+
+        <p id="footnote-1" class="text-sm text-gray-500 mb-8">
+          [1] This is the footnote content.
+          <a href="#" class="underline decoration-black decoration-wavy underline-offset-2">↩</a>
+        </p>
+
+        <hr class="my-10" />
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">19. Final Section</h2>
+
+        <p class="mb-6">
+          If your template renders everything above correctly with proper spacing, alignment,
+          readability, and overflow handling, then your minimal typography-first implementation is
+          structurally complete.
+        </p>
+
+        <hr class="my-10" />
+
+        <p class="mb-6">End of format coverage article.</p>
+      </article>
+
+      <section>
+        <h2 class="text-2xl font-semibold mt-10 mb-4">Continue Reading</h2>
+        <p class="mb-6">
+          <a href="index.html" class="underline decoration-black decoration-wavy underline-offset-2"
+            >Back to home</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="mx-auto max-w-[720px] px-6 pb-12 text-center">
+      <p class="text-sm text-gray-500 mb-8">
+        Powered by
+        <a href="https://blug.io" class="underline decoration-black decoration-wavy underline-offset-2"
+          >Blug</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
