@@ -1,0 +1,40 @@
+<!--
+Component: Article List Filters
+Used in: articles.html
+How to use:
+- Use at the top of an article listing page.
+- Bind search input and select values to your framework state.
+- Keep IDs unique if this component appears multiple times.
+-->
+<section>
+  <h2 class="text-2xl font-semibold mt-10 mb-4">Filters</h2>
+
+  <div class="mb-6">
+    <label for="articles-search" class="text-sm text-gray-500 mb-8 block">Search</label>
+    <input id="articles-search" type="search" placeholder="Search articles" class="w-full" />
+  </div>
+
+  <div class="mb-10">
+    <label for="articles-filter-category" class="text-sm text-gray-500 mb-8 block">Category</label>
+    <select id="articles-filter-category" class="w-full mb-6">
+      <option>All categories</option>
+      <option>Engineering</option>
+      <option>Product</option>
+      <option>Design</option>
+    </select>
+
+    <label for="articles-filter-tag" class="text-sm text-gray-500 mb-8 block">Tag</label>
+    <select id="articles-filter-tag" class="w-full mb-6">
+      <option>All tags</option>
+      <option>typescript</option>
+      <option>frontend</option>
+      <option>api</option>
+    </select>
+
+    <label for="articles-sort-date" class="text-sm text-gray-500 mb-8 block">Date sort</label>
+    <select id="articles-sort-date" class="w-full">
+      <option>Newest first</option>
+      <option>Oldest first</option>
+    </select>
+  </div>
+</section>

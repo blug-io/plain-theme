@@ -1,0 +1,20 @@
+<!--
+Component: Site Navigation
+Used in: index.html, articles.html, article-detail.html, categories.html, category-detail.html, tags.html, tag-detail.html, about.html
+How to use:
+- Place directly under <body> as the global top navigation.
+- Keep href targets aligned with your routing system.
+- In framework implementations, map href values to router links.
+-->
+<nav class="mx-auto max-w-[720px] px-6 pt-8">
+  <div class="flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-gray-200 pb-4">
+    <a href="index.html" class="flex items-center gap-2 no-underline font-semibold">
+      <span class="inline-block h-5 w-5 rounded-sm bg-gray-900"></span>
+      <span>Blug</span>
+    </a>
+    <a href="articles.html" class="underline decoration-black decoration-wavy underline-offset-2">All Articles</a>
+    <a href="categories.html" class="underline decoration-black decoration-wavy underline-offset-2">Categories</a>
+    <a href="tags.html" class="underline decoration-black decoration-wavy underline-offset-2">Tags</a>
+    <a href="about.html" class="underline decoration-black decoration-wavy underline-offset-2">About</a>
+  </div>
+</nav>

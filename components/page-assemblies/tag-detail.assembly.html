@@ -1,0 +1,23 @@
+<!--
+Page Assembly: Tag Detail (tag-detail.html)
+How to use:
+- Use shared nav/header/footer components.
+- Render tag metadata in header and article cards for the tag feed.
+-->
+<body class="text-[18px] leading-[1.75] text-gray-900">
+  <!-- Include: ../site-navigation.html -->
+
+  <!-- Include: ../page-header.html -->
+  <!-- Props:
+    [PAGE_TITLE] = #[TAG_NAME]
+    [PAGE_SUBTITLE_OR_META] = Articles tagged with [TAG_NAME].
+  -->
+
+  <main class="mx-auto max-w-[720px] px-6 pb-24">
+    <section>
+      <!-- Include xN: ../article-card.html -->
+    </section>
+  </main>
+
+  <!-- Include: ../site-footer.html -->
+</body>

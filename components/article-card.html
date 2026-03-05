@@ -1,0 +1,16 @@
+<!--
+Component: Article Card
+Used in: index.html (featured), articles.html, category-detail.html, tag-detail.html
+How to use:
+- Repeat this block inside a listing section.
+- Set [TITLE], [EXCERPT], [META], and [ARTICLE_URL].
+- For title links, keep no-underline to avoid wavy style on titles.
+-->
+<article class="mb-10">
+  <h3 class="text-xl font-medium mt-8 mb-3">
+    <a href="[ARTICLE_URL]" class="no-underline hover:underline">[TITLE]</a>
+  </h3>
+  <p class="mb-6">[EXCERPT]</p>
+  <p class="text-sm text-gray-500 mb-8">[META]</p>
+  <a href="[ARTICLE_URL]" class="underline decoration-black decoration-wavy underline-offset-2">Read article</a>
+</article>

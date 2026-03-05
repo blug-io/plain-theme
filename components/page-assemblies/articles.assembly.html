@@ -1,0 +1,32 @@
+<!--
+Page Assembly: All Articles (articles.html)
+How to use:
+- Use shared nav/header/footer components.
+- Use filters component followed by repeated article-card components.
+-->
+<body class="text-[18px] leading-[1.75] text-gray-900">
+  <!-- Include: ../site-navigation.html -->
+
+  <!-- Include: ../page-header.html -->
+  <!-- Props:
+    [PAGE_TITLE] = All Articles
+    [PAGE_SUBTITLE_OR_META] = Back to home link block (page-specific)
+  -->
+
+  <main class="mx-auto max-w-[720px] px-6 pb-24">
+    <!-- Include: ../article-list-filters.html -->
+
+    <section>
+      <!-- Include xN: ../article-card.html -->
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Infinite Scroll</h2>
+      <p class="text-sm text-gray-500 mb-8">
+        Load more articles as you scroll (placeholder only).
+      </p>
+    </section>
+  </main>
+
+  <!-- Include: ../site-footer.html -->
+</body>
