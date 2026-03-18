@@ -2,12 +2,12 @@
 Component: Article Content Shell
 Used in: article-detail.html
 How to use:
-- Wrap the post body inside this shell.
-- Insert rich content (headings, paragraphs, code, lists, tables, media) inside the <article>.
-- Keep utility classes for spacing rhythm consistency.
+- Wrap backend-rendered HTML content inside the <article class="article-content"> container.
+- Apply typography/list/code/table styles via top-level `.article-content` descendant selectors.
+- Do not rely on per-element utility classes inside CMS/backend HTML.
 -->
 <main class="mx-auto max-w-[720px] px-6 pb-24">
-  <article>
+  <article class="article-content">
     [ARTICLE_BODY_CONTENT]
   </article>
 </main>
